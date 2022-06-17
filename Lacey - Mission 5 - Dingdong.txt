@@ -1,0 +1,38 @@
+//Mission 5 DingDong
+public class DingDong{
+	public static void M5List()
+    {
+    //Declare a list called "input" used to hold 4 numbers 12, 20, 30, 17   
+    List<integer> input = new List<Integer>();
+    
+    input.add(12);
+    input.add(20);
+    input.add(30);
+	input.add(17);
+
+    //Loop through "input"
+    for(integer i:input)
+    {
+        //if i divisible by 3 = Ding
+        if((math.mod(i,3)==0) && (math.mod(i, 5)!=0)) 
+        {
+        system.debug('Ding');
+        }
+        //if divisible by 5 = Dong
+        else if ((math.mod(i, 5)==0 && math.mod(i,3)!=0))
+        {
+        system.debug('Dong');   
+        }
+        //if didisible by 3 & 5 = DingDong lol         
+        else if ((math.mod(i,3)==0) && (math.mod(i, 5)==0))
+        {
+        system.debug('DingDong');
+        }   
+        //if divisible by none then = 17
+ 		else
+        {
+        system.debug(17);
+        }
+      }
+    }
+}

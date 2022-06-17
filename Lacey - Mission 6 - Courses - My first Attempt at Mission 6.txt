@@ -1,0 +1,30 @@
+//If condition that checks course level and upgrades training course
+public class M6CourseLevel {
+    public static void educationLevel(){
+       
+    	
+        string PriorQualification = 'Tertiary Post-Graduate';//Decalre what stage the student's prior qualification is here
+        string course;
+        
+        if (PriorQualification == 'Below Tertiary')
+        {
+            course = 'Advanced Sprint Training';
+            system.debug ('Status upgraded to: Advanced Sprint Training***'+course);
+        }
+        else if (PriorQualification == 'Tertiary Graduate')
+        {
+            course = 'Ultimate Sprint Training';
+            system.debug('Status upgraded to: Ultimate Sprint Training***'+course);
+        }
+        else if (PriorQualification == 'Tertiary Post-Graduate')
+        {
+            course = 'Extra Sprint Training';
+            system.debug('Status upgraded to: Extra Sprint Training***'+course);
+   		}
+        else 
+        {
+            course = 'Sprint Training';
+            system.debug('Sprint Training***'+course); //If none match courses above then print first course
+    	}
+	}
+}
